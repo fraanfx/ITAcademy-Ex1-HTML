@@ -1,9 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+   
+ 
+
 }
+/*Reusable*/
 html{
     font-size: 16px;
+    background-color: cadetblue;
+    color: #fff;
 }
 
 .header{
@@ -11,8 +18,337 @@ html{
     flex-direction: row;
     width: 100%;
 }
-.container{
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container {
     display: flex;
+  width: 90%;
+    max-width: 120rem;
+    height: 100%;
     position: relative;
+    margin: 0px auto;
+}
+.container.center{
+    justify-content: center;
+    align-content: center;
+}
+.container.center img{
+    margin-top: 60px;
+}
+
+
+/*Navigation*/
+.menu{
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+    max-height: 40px;
+}
+.menu > .container{
+    justify-content: space-between;
+}
+header> .menu{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: cadetblue;
+    padding: 1.5rem;
+}    
+nav> .container > ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+nav > .container > ul > li{
     
+    padding: 0 10px;
+}
+nav > .container > ul > li a{
+    font-size: 16px;
+    text-decoration: none;
+
+
+}
+
+/*Headers*/
+
+section{
+    padding: 3rem 0;
+}
+section > .section--header{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+
+
+
+
+
+.grid--skills{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto) ;
+
+}
+.skill--cell{
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.skill--cell i{
+    margin-right: 10px;
+}
+
+/*Projects section*/
+.projects{
+    display: flex;
+    flex-direction: row nowrap;
+    width: 100%;
+    margin:  20px 0;
+}
+.project{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+}
+.project--preview{
+    width: 45%;
+    margin: 0 1.25%;
+}
+.project--info{
+    width: 45%;
+    margin: 0 1.25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sw--logos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+.sw--logos i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.sw--logos i:nth-last-child(0){
+    margin-right: 0;
+    
+}
+
+
+/*Start timeline*/
+.timeline{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.timeline ul{
+	border-left: 4px solid #3a696b;
+	border-radius: 8px;
+	background-color: rgba(0,0,0,0.05);
+	margin: 0 auto;
+	position: relative;
+	padding: 50px;
+	list-style: none;
+	text-align: left;
+	width: 70%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.timeline h1{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 10px;
+	opacity: .3;
+}
+
+.timeline .date{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.timeline .date:last-of-type{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border: none;
+} 
+
+.timeline .date::before,
+.timeline .date::after{
+	position: absolute;
+	display: block;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.timeline .date::before{
+	content: attr(data-date);
+	left: -186px;
+	text-align: right;
+	min-width: 120px;
+	font-size: 15px;
+}
+.timeline .date::after{
+	content: '';
+	box-shadow: 0 0 0 4px #3a696b;
+	border-radius: 100%;
+	left: -60px;
+	height: 15px;
+	width: 15px;
+	background-color: #3a696bbb;
+}
+/*End timeline*/
+
+
+.social-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.social-grid i{
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+.social-grid i:hover{
+    cursor: pointer;
+}
+
+
+#contact > .container{
+    flex-flow: column nowrap;
+    align-content: center;
+}
+/*Buton*/
+.button{
+    cursor: pointer;
+    align-self: center;
+    max-width: 30%;
+    text-align: center;
+    color: cadetblue;
+    padding: 2px 10px;
+    background-color: #fff;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    border: 2px solid #fff;
+    transition: ease all 0.3s;
+    -webkit-transition: ease all 0.3s;
+    -moz-transition: ease all 0.3s;
+    -ms-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+}
+.button:hover{
+    color:#fff;
+    background-color: cadetblue;
+    transition: ease all 0.3s;
+    -webkit-transition: ease all 0.3s;
+    -moz-transition: ease all 0.3s;
+    -ms-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+
+}
+
+footer{
+    padding: 30px 0;
+    background-color: #327679;
+}
+footer p{
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .grid--skills {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    .project{
+        flex-flow: column nowrap;
+    }
+    .project--preview{
+        margin: 5px 0;
+       width: 100%;
+    }
+    .project--info{
+        margin: 5px 0;
+        width: 100%;
+    }
+    .project--info > span,div,h1,p{
+        margin: 5px 0;
+    }
+
+    .timeline ul{
+        width: 90%;
+        margin: 0 0 0 auto;
+    }
+    .timeline .date { 
+        margin: 18px;
+        margin-bottom: 60px;
+    }
+    .timeline .date::before{
+        left: -40px;
+        top: -20px;
+    }
+    .timeline .date::after{
+        left: -37px;
+        top: -20px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+    nav > .container > ul > li a{
+        font-size: 12px;
+        text-decoration: none;
+    
+    
+    }
+    header > h1{
+        font-size: 18px;
+    }
+    .grid--skills {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    .timeline ul{
+        padding: 10px;
+    }
+    .timeline p{
+        font-size: 16px;
+    }
+    .timeline .date::before{
+        font-size: 14px;
+    }
+    .timeline .date::before{
+        font-size: 14px;
+    }
 }

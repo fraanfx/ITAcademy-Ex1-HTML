@@ -4,28 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Vue portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
     <header>
-        <nav>
+        <nav class="menu">
+            <div class="container ">
             <div class="menu--container-title">
-                <h1 class="menu-tittle">
+                <h1 class="menu--tittle">
                     Vue Portfolio
                 </h1>
             </div>
             <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#projects">About me</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+        </div>
         </nav>
-        <div class="container">
-            <img src="https://drive.google.com/uc?export=download&id=12cvnQrLuB5WcD8WRdTy5ZJjVA3_KMUhR" alt="">
+        <div class="container center">
+            <img src="https://via.placeholder.com/1280x720?text=Foto+de+perfil+o+algo" alt="">
         </div>
     </header>
 
+    <section id="about">
+        <div class="section--header">
+            <h3>About me</h3>
+        </div>
+        <article>
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente similique hic earum. Dolorem unde vero harum? Ea nobis animi reiciendis recusandae corrupti nam, corporis numquam quos autem aperiam! Velit, facere.</p>
+            </div>
+        </article>
+    </section>
+    <section id="skills">
+        <div class="section--header">
+            <h3>Soft skills</h3>
+        </div>
+        <div class="container">
+            <div class="grid--skills">
+                <div class="skill--cell">
+                    <i class="fas fa-basketball-ball"></i>
+                    <p>Skill 1</p>
+                </div>
+                <div class="skill--cell">
+                    <i class="fas fa-basketball-ball"></i>
+                    <p>Skill 1</p>
+                </div>
+                <div class="skill--cell">
+                    <i class="fas fa-basketball-ball"></i>
+                    <p>Skill 1</p>
+                </div>
+                <div class="skill--cell">
+                    <i class="fas fa-basketball-ball"></i>
+                    <p>Skill 1</p>
+                </div>
+                <div class="skill--cell">
+                    <i class="fas fa-basketball-ball"></i>
+                    <p>Skill 1</p>
+                </div>
+                <div class="skill--cell">
+                    <i class="fas fa-basketball-ball"></i>
+                    <p>Skill 1</p>
+                </div>
+                <div class="skill--cell">
+                    <i class="fas fa-basketball-ball"></i>
+                    <p>Skill 1</p>
+                </div> <div class="skill--cell">
+                    <i class="fas fa-basketball-ball"></i>
+                    <p>Skill 1</p>
+                </div>
 
-    
+                
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="section--header">
+            <h3>Projects</h3>
+        </div>
+        <div class="container">
+            <div class="projects">
+                <div class="project">        
+                    <div class="project--preview">
+                        <img src="https://via.placeholder.com/1280x720?text=Foto+de+perfil+o+algo" alt="">
+                    </div>
+                    <div class="project--info">
+                        <h1>Title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sunt ducimus rem quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus perferendis maiores libero ullam! Ad eum facilis tenetur commodi. Impedit culpa in tempore magni numquam.</p>
+                        <div class="sw--logos">
+                            <i class="fab fa-github"></i><i class="fab fa-github"></i><i class="fab fa-github"></i><i class="fab fa-github"></i>
+                        </div>
+                        <span class="button">View project</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <div class="timeline">
+                <ul>
+                    <li class="date" data-date="2020 - 2021">
+                        <h1>Experience title</h1>
+                        <p>Description</p>
+                    </li>
+                    <li class="date" data-date="2020 - 2021">
+                        <h1>Experience title</h1>
+                        <p>Description</p>
+                    </li>
+                    <li class="date" data-date="2020 - 2021">
+                        <h1>Experience title</h1>
+                        <p>Description</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section id="social">
+        <div class="section--header">
+            <h3>Find me on...</h3>
+        </div>
+        <div class="container center">
+           <div class="social-grid">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i>
+           </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section--header">
+            <h3>Reach me out!</h3>
+        </div>
+        <div class="container">
+            <span class="button">Hire me</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>Fran Ariño ©2021</p>
+    </footer>
 </body>
 </html>
